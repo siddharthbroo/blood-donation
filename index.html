@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="index.html">Blood Donation</a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support Us</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <a href="login.html" class="login-btn">Log In</a>
+        <a href="donate.html" class="donate-btn">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <video class="hero-video" autoplay loop muted>
+    <source src="assets/video/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-content">
+    <h1 class="hero-tagline">"Donate Blood, Save Lives"</h1> <!-- Tagline -->
+    <button class="donate-btn" onclick="donateAction()">Donate</button>
+  </div>
+</section>
+
+
+
+
+<section class="info-section">
+  <div class="box" data-aos="fade-up">
+    <h2>Find a Blood Drive</h2>
+    <p>Locate a nearby blood donation drive and be a hero.</p>
+    <button class="box-btn">Learn More</button>
+  </div>
+  <div class="box" data-aos="fade-up" data-aos-delay="100">
+    <h2>Become a Donor</h2>
+    <p>Join our network of lifesavers and make a difference.</p>
+    <button class="box-btn">Learn More</button>
+  </div>
+  <div class="box" data-aos="fade-up" data-aos-delay="200">
+    <h2>Request Blood</h2>
+    <p>In need of blood? Submit a request for immediate assistance.</p>
+    <button class="box-btn">Learn More</button>
+  </div>
+  <div class="box" data-aos="fade-up" data-aos-delay="300">
+    <h2>Support Our Cause</h2>
+    <p>Help us expand our efforts through donations and volunteering.</p>
+    <button class="box-btn">Learn More</button>
+  </div>
+</section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+  
+
+</body>
+</html>
