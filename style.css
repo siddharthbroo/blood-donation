@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black; /* Solid black background */
+  padding: 15px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #e63946; /* Red color on hover */
+  transform: scale(1.1);
+}
+
+/* Navbar Actions (Log In & Donate) */
+.navbar-actions {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  gap: 15px; /* Adds spacing between the Log In and Donate buttons */
+}
+
+.login-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid white; /* Optional: Add a border for better visibility */
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #e63946;
+  color: white;
+}
+
+/* Donate Button */
+.donate-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.donate-btn:hover {
+  transform: scale(1.1);
+  background-color: #d62828;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hero Video */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video scales properly */
+  z-index: -1; /* Places the video behind the content */
+}
+
+/* Tagline and Button */
+.hero-content {
+  position: absolute; /* Position it relative to the hero section */
+  top: 60%; /* Adjust vertical positioning */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Ensure perfect centering */
+  text-align: center; /* Center-align text and button */
+  z-index: 1; /* Keeps it above the video background */
+}
+
+
+/* Tagline Styles */
+.hero-tagline {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds spacing between tagline and button */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
+}
+
+/* Adjust Donate Button */
+.hero-content .donate-btn {
+  padding: 0.7rem 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s;
+  margin-top: 40px; /* Ensures space between tagline and button */
+}
+
+.hero-content .donate-btn:hover {
+  transform: scale(1.1);
+  background-color: #d62828;
+}
+
+
+/* Info Section */
+.info-section {
+  position: relative;
+  margin-top: -150px; /* Moves the boxes upward to overlap the hero section */
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  z-index: 1; /* Ensures the section is above the hero section */
+  background: transparent; /* Makes the section's background transparent */
+}
+
+/* Individual Boxes */
+.box {
+  background: #8E1616; /* Semi-transparent background for the boxes */
+  border: 3px solid #050404;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.box h2 {
+  font-size: 1.5rem;
+  color: #EEEEEE;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 1rem;
+  color: #EEEEEE; /* Changed to white for better contrast */
+  margin-bottom: 15px;
+}
+
+.box-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(226, 218, 218);
+  background-color: #1D1616;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.box-btn:hover {
+  background-color: #d62828;
+  transform: scale(1.1);
+}
+
+/* Box Hover Effect */
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
